@@ -93,6 +93,8 @@ Then add your notes:
 | 📊 Data & Scaling | RefinedWeb | `refinedweb-2023` |
 | 📊 Data & Scaling | MegaScale | `megascale-2024` |
 
+> 📖 **Paper list source**: [Awesome-AITools](https://github.com/ikaijua/Awesome-AITools) • 美團光年之外產品負責人 謝青池：《AI演義，36篇論文開啟你的探索之旅》
+
 ## Project Structure
 
 ```
@@ -107,8 +109,6 @@ ML_AI/
     ├── README.md           # This file
     └── notes/              # Your reading notes
 ```
-
-> **Note**: PDF folders (基礎模型/, 語言模型/, 多模態/, 模型效率與優化/, 數據/) are stored locally and not uploaded to Git.
 
 ## Customization
 
