@@ -54,14 +54,44 @@ Then add your notes:
 
 ### 3. Paper IDs Reference
 
-| Paper | ID |
-|-------|-----|
-| Attention Is All You Need | `transformer-2017` |
-| BERT | `bert-2018` |
-| GPT-3 | `gpt3-2020` |
-| ResNet | `resnet-2015` |
-| AlexNet | `alexnet-2012` |
-| ... | See `papers.json` for full list |
+| Category | Paper | ID |
+|----------|-------|-----|
+| 🏛️ Foundations | Brook for GPUs | `brook-gpu-2004` |
+| 🏛️ Foundations | AlexNet | `alexnet-2012` |
+| 🏛️ Foundations | GAN | `gan-2014` |
+| 🏛️ Foundations | ResNet | `resnet-2015` |
+| 🏛️ Foundations | Transformer | `transformer-2017` |
+| 💬 Language Models | Word2Vec | `word2vec-2013` |
+| 💬 Language Models | Seq2Seq | `seq2seq-2014` |
+| 💬 Language Models | Bahdanau Attention | `bahdanau-attention-2015` |
+| 💬 Language Models | GNMT | `gnmt-2016` |
+| 💬 Language Models | GPT-1 | `gpt1-2018` |
+| 💬 Language Models | BERT | `bert-2018` |
+| 💬 Language Models | GPT-2 | `gpt2-2019` |
+| 💬 Language Models | GPT-3 | `gpt3-2020` |
+| 💬 Language Models | InstructGPT | `instructgpt-2022` |
+| 💬 Language Models | Tülu 3 | `tulu3-2024` |
+| 🎨 Multimodal | Two-Stream CNN | `two-stream-2014` |
+| 🎨 Multimodal | Video CNN | `video-cnn-2014` |
+| 🎨 Multimodal | Diffusion (Thermodynamics) | `diffusion-thermo-2015` |
+| 🎨 Multimodal | AlphaGo Zero | `alphago-zero-2017` |
+| 🎨 Multimodal | DDPM | `ddpm-2020` |
+| 🎨 Multimodal | ViT | `vit-2020` |
+| 🎨 Multimodal | CLIP | `clip-2021` |
+| 🎨 Multimodal | Latent Diffusion | `latent-diffusion-2021` |
+| 🎨 Multimodal | Chain-of-Thought | `cot-2022` |
+| 🎨 Multimodal | DiT | `dit-2022` |
+| ⚡ Efficiency | Knowledge Distillation | `distillation-2015` |
+| ⚡ Efficiency | MoE | `moe-2017` |
+| ⚡ Efficiency | ZeRO | `zero-2019` |
+| ⚡ Efficiency | Scaling Laws | `scaling-laws-2020` |
+| ⚡ Efficiency | LoRA | `lora-2021` |
+| ⚡ Efficiency | Chinchilla | `chinchilla-2022` |
+| ⚡ Efficiency | ReAct | `react-2022` |
+| 📊 Data & Scaling | The Bitter Lesson | `bitter-lesson-2019` |
+| 📊 Data & Scaling | LAION-5B | `laion5b-2022` |
+| 📊 Data & Scaling | RefinedWeb | `refinedweb-2023` |
+| 📊 Data & Scaling | MegaScale | `megascale-2024` |
 
 ## Project Structure
 
@@ -76,12 +106,9 @@ ML_AI/
     ├── preview.png         # Preview image
     ├── README.md           # This file
     └── notes/              # Your reading notes
-        ├── transformer-2017.md
-        ├── resnet-2015.md
-        └── gpt3-2020.md
 ```
 
-> **Note**: PDF 論文資料夾 (基礎模型/、語言模型/、多模態/、模型效率與優化/、數據/) 僅存於本地，不上傳至 Git。
+> **Note**: PDF folders (基礎模型/, 語言模型/, 多模態/, 模型效率與優化/, 數據/) are stored locally and not uploaded to Git.
 
 ## Customization
 
