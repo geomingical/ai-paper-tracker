@@ -1,0 +1,432 @@
+{
+  "categories": [
+    {
+      "id": "foundations",
+      "name": "Foundations",
+      "icon": "🏛️",
+      "color": "#6366f1"
+    },
+    {
+      "id": "language-models",
+      "name": "Language Models",
+      "icon": "💬",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "multimodal",
+      "name": "Multimodal",
+      "icon": "🎨",
+      "color": "#ec4899"
+    },
+    {
+      "id": "efficiency",
+      "name": "Efficiency & Optimization",
+      "icon": "⚡",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "data",
+      "name": "Data & Scaling",
+      "icon": "📊",
+      "color": "#10b981"
+    }
+  ],
+  "papers": [
+    {
+      "id": "brook-gpu-2004",
+      "title": "Brook for GPUs: Stream Computing on Graphics Hardware",
+      "authors": ["Ian Buck", "Tim Foley", "Daniel Horn", "Jeremy Sugerman", "Kayvon Fatahalian", "Mike Houston", "Pat Hanrahan"],
+      "year": 2004,
+      "category": "foundations",
+      "filename": "2004_brookgpu.pdf",
+      "arxiv": null,
+      "significance": "Pioneering GPU computing framework that laid groundwork for CUDA",
+      "tags": ["GPU", "GPGPU", "Parallel Computing"]
+    },
+    {
+      "id": "alexnet-2012",
+      "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+      "authors": ["Alex Krizhevsky", "Ilya Sutskever", "Geoffrey E. Hinton"],
+      "year": 2012,
+      "category": "foundations",
+      "filename": "NIPS-2012-imagenet-classification-with-deep-convolutional-neural-networks-Paper.pdf",
+      "arxiv": null,
+      "significance": "AlexNet - sparked the deep learning revolution by winning ImageNet 2012",
+      "tags": ["CNN", "ImageNet", "Computer Vision"]
+    },
+    {
+      "id": "word2vec-2013",
+      "title": "Efficient Estimation of Word Representations in Vector Space",
+      "authors": ["Tomas Mikolov", "Kai Chen", "Greg Corrado", "Jeffrey Dean"],
+      "year": 2013,
+      "category": "language-models",
+      "filename": "1301.3781v3.pdf",
+      "arxiv": "1301.3781",
+      "significance": "Word2Vec - introduced word embeddings that revolutionized NLP",
+      "tags": ["Word Embeddings", "NLP", "Representation Learning"]
+    },
+    {
+      "id": "gan-2014",
+      "title": "Generative Adversarial Nets",
+      "authors": ["Ian J. Goodfellow", "Jean Pouget-Abadie", "Mehdi Mirza", "Bing Xu", "David Warde-Farley", "Sherjil Ozair", "Aaron Courville", "Yoshua Bengio"],
+      "year": 2014,
+      "category": "foundations",
+      "filename": "1406.2661v1.pdf",
+      "arxiv": "1406.2661",
+      "significance": "Introduced GANs - one of the most influential generative model architectures",
+      "tags": ["GAN", "Generative Models", "Adversarial Training"]
+    },
+    {
+      "id": "two-stream-2014",
+      "title": "Two-Stream Convolutional Networks for Action Recognition in Videos",
+      "authors": ["Karen Simonyan", "Andrew Zisserman"],
+      "year": 2014,
+      "category": "multimodal",
+      "filename": "1406.2199v2.pdf",
+      "arxiv": "1406.2199",
+      "significance": "Pioneering architecture for video understanding with spatial and temporal streams",
+      "tags": ["Video Understanding", "Action Recognition", "CNN"]
+    },
+    {
+      "id": "seq2seq-2014",
+      "title": "Sequence to Sequence Learning with Neural Networks",
+      "authors": ["Ilya Sutskever", "Oriol Vinyals", "Quoc V. Le"],
+      "year": 2014,
+      "category": "language-models",
+      "filename": "1409.3215v3.pdf",
+      "arxiv": "1409.3215",
+      "significance": "Seq2Seq - foundational architecture for machine translation and beyond",
+      "tags": ["Seq2Seq", "Machine Translation", "LSTM"]
+    },
+    {
+      "id": "video-cnn-2014",
+      "title": "Large-scale Video Classification with Convolutional Neural Networks",
+      "authors": ["Andrej Karpathy", "George Toderici", "Sanketh Shetty", "Thomas Leung", "Rahul Sukthankar", "Li Fei-Fei"],
+      "year": 2014,
+      "category": "multimodal",
+      "filename": "42455.pdf",
+      "arxiv": null,
+      "significance": "Sports-1M dataset and early exploration of CNNs for video classification",
+      "tags": ["Video Classification", "CNN", "Sports-1M"]
+    },
+    {
+      "id": "bahdanau-attention-2015",
+      "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+      "authors": ["Dzmitry Bahdanau", "KyungHyun Cho", "Yoshua Bengio"],
+      "year": 2015,
+      "category": "language-models",
+      "filename": "1409.0473v7.pdf",
+      "arxiv": "1409.0473",
+      "significance": "Introduced attention mechanism that became foundation for Transformers",
+      "tags": ["Attention", "Machine Translation", "NMT"]
+    },
+    {
+      "id": "diffusion-thermo-2015",
+      "title": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+      "authors": ["Jascha Sohl-Dickstein", "Eric A. Weiss", "Niru Maheswaranathan", "Surya Ganguli"],
+      "year": 2015,
+      "category": "multimodal",
+      "filename": "1503.03585v8.pdf",
+      "arxiv": "1503.03585",
+      "significance": "Original diffusion model paper that inspired DDPM and modern generative AI",
+      "tags": ["Diffusion Models", "Generative Models", "Thermodynamics"]
+    },
+    {
+      "id": "distillation-2015",
+      "title": "Distilling the Knowledge in a Neural Network",
+      "authors": ["Geoffrey Hinton", "Oriol Vinyals", "Jeff Dean"],
+      "year": 2015,
+      "category": "efficiency",
+      "filename": "1503.02531v1.pdf",
+      "arxiv": "1503.02531",
+      "significance": "Knowledge Distillation - compress large models into smaller efficient ones",
+      "tags": ["Knowledge Distillation", "Model Compression", "Transfer Learning"]
+    },
+    {
+      "id": "resnet-2015",
+      "title": "Deep Residual Learning for Image Recognition",
+      "authors": ["Kaiming He", "Xiangyu Zhang", "Shaoqing Ren", "Jian Sun"],
+      "year": 2015,
+      "category": "foundations",
+      "filename": "1512.03385v1.pdf",
+      "arxiv": "1512.03385",
+      "significance": "ResNet - enabled training of very deep networks with skip connections",
+      "tags": ["ResNet", "Skip Connections", "Deep Networks"]
+    },
+    {
+      "id": "gnmt-2016",
+      "title": "Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation",
+      "authors": ["Yonghui Wu", "Mike Schuster", "Zhifeng Chen", "Quoc V. Le"],
+      "year": 2016,
+      "category": "language-models",
+      "filename": "1609.08144v2.pdf",
+      "arxiv": "1609.08144",
+      "significance": "GNMT - production-scale NMT system that transformed Google Translate",
+      "tags": ["Machine Translation", "Production Systems", "Google"]
+    },
+    {
+      "id": "moe-2017",
+      "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+      "authors": ["Noam Shazeer", "Azalia Mirhoseini", "Krzysztof Maziarz", "Andy Davis", "Quoc Le", "Geoffrey Hinton", "Jeff Dean"],
+      "year": 2017,
+      "category": "efficiency",
+      "filename": "1701.06538v1.pdf",
+      "arxiv": "1701.06538",
+      "significance": "Mixture-of-Experts - scale models efficiently with conditional computation",
+      "tags": ["MoE", "Sparse Models", "Conditional Computation"]
+    },
+    {
+      "id": "transformer-2017",
+      "title": "Attention Is All You Need",
+      "authors": ["Ashish Vaswani", "Noam Shazeer", "Niki Parmar", "Jakob Uszkoreit", "Llion Jones", "Aidan N. Gomez", "Łukasz Kaiser", "Illia Polosukhin"],
+      "year": 2017,
+      "category": "foundations",
+      "filename": "1706.03762v7.pdf",
+      "arxiv": "1706.03762",
+      "significance": "The Transformer - architecture that powers modern AI (GPT, BERT, etc.)",
+      "tags": ["Transformer", "Self-Attention", "Architecture"]
+    },
+    {
+      "id": "alphago-zero-2017",
+      "title": "Mastering the game of Go without human knowledge",
+      "authors": ["David Silver", "Julian Schrittwieser", "Karen Simonyan", "Ioannis Antonoglou", "Aja Huang", "Arthur Guez", "Thomas Hubert", "Lucas Baker", "Matthew Lai", "Adrian Bolton", "Yutian Chen", "Timothy Lillicrap", "Fan Hui", "Laurent Sifre", "George van den Driessche", "Thore Graepel", "Demis Hassabis"],
+      "year": 2017,
+      "category": "multimodal",
+      "filename": "nature24270.pdf",
+      "arxiv": null,
+      "significance": "AlphaGo Zero - learned superhuman Go purely through self-play",
+      "tags": ["Reinforcement Learning", "Self-Play", "Game AI"]
+    },
+    {
+      "id": "gpt1-2018",
+      "title": "Improving Language Understanding by Generative Pre-Training",
+      "authors": ["Alec Radford", "Karthik Narasimhan", "Tim Salimans", "Ilya Sutskever"],
+      "year": 2018,
+      "category": "language-models",
+      "filename": "language_understanding_paper.pdf",
+      "arxiv": null,
+      "significance": "GPT-1 - introduced generative pre-training for language understanding",
+      "tags": ["GPT", "Pre-training", "Language Models"]
+    },
+    {
+      "id": "bert-2018",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "authors": ["Jacob Devlin", "Ming-Wei Chang", "Kenton Lee", "Kristina Toutanova"],
+      "year": 2018,
+      "category": "language-models",
+      "filename": "1810.04805v2.pdf",
+      "arxiv": "1810.04805",
+      "significance": "BERT - bidirectional pre-training that dominated NLP benchmarks",
+      "tags": ["BERT", "Pre-training", "Bidirectional"]
+    },
+    {
+      "id": "gpt2-2019",
+      "title": "Language Models are Unsupervised Multitask Learners",
+      "authors": ["Alec Radford", "Jeffrey Wu", "Rewon Child", "David Luan", "Dario Amodei", "Ilya Sutskever"],
+      "year": 2019,
+      "category": "language-models",
+      "filename": "language_models_are_unsupervised_multitask_learners.pdf",
+      "arxiv": null,
+      "significance": "GPT-2 - showed emergent capabilities in larger language models",
+      "tags": ["GPT-2", "Zero-shot", "Emergent Capabilities"]
+    },
+    {
+      "id": "bitter-lesson-2019",
+      "title": "The Bitter Lesson",
+      "authors": ["Rich Sutton"],
+      "year": 2019,
+      "category": "data",
+      "filename": "The Bitter Lesson.txt",
+      "arxiv": null,
+      "significance": "Influential essay arguing that scale and compute beat human knowledge",
+      "tags": ["Philosophy", "Scaling", "Compute"]
+    },
+    {
+      "id": "zero-2019",
+      "title": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models",
+      "authors": ["Samyam Rajbhandari", "Jeff Rasley", "Olatunji Ruwase", "Yuxiong He"],
+      "year": 2019,
+      "category": "efficiency",
+      "filename": "1910.02054v3.pdf",
+      "arxiv": "1910.02054",
+      "significance": "ZeRO - memory-efficient distributed training for massive models",
+      "tags": ["Distributed Training", "Memory Optimization", "DeepSpeed"]
+    },
+    {
+      "id": "scaling-laws-2020",
+      "title": "Scaling Laws for Neural Language Models",
+      "authors": ["Jared Kaplan", "Sam McCandlish", "Tom Henighan", "Tom B. Brown", "Benjamin Chess", "Rewon Child", "Scott Gray", "Alec Radford", "Jeffrey Wu", "Dario Amodei"],
+      "year": 2020,
+      "category": "efficiency",
+      "filename": "2001.08361v1.pdf",
+      "arxiv": "2001.08361",
+      "significance": "Discovered power-law scaling relationships for LLM performance",
+      "tags": ["Scaling Laws", "Power Laws", "LLM Training"]
+    },
+    {
+      "id": "gpt3-2020",
+      "title": "Language Models are Few-Shot Learners",
+      "authors": ["Tom B. Brown", "Benjamin Mann", "Nick Ryder", "Melanie Subbiah", "Jared Kaplan", "Prafulla Dhariwal", "Arvind Neelakantan", "Pranav Shyam", "Girish Sastry", "Amanda Askell"],
+      "year": 2020,
+      "category": "language-models",
+      "filename": "2005.14165v4.pdf",
+      "arxiv": "2005.14165",
+      "significance": "GPT-3 - demonstrated in-context learning and few-shot capabilities",
+      "tags": ["GPT-3", "Few-shot Learning", "In-context Learning"]
+    },
+    {
+      "id": "ddpm-2020",
+      "title": "Denoising Diffusion Probabilistic Models",
+      "authors": ["Jonathan Ho", "Ajay Jain", "Pieter Abbeel"],
+      "year": 2020,
+      "category": "multimodal",
+      "filename": "2006.11239v2.pdf",
+      "arxiv": "2006.11239",
+      "significance": "DDPM - made diffusion models practical for high-quality image generation",
+      "tags": ["Diffusion Models", "Image Generation", "DDPM"]
+    },
+    {
+      "id": "vit-2020",
+      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+      "authors": ["Alexey Dosovitskiy", "Lucas Beyer", "Alexander Kolesnikov", "Dirk Weissenborn", "Xiaohua Zhai", "Thomas Unterthiner", "Mostafa Dehghani", "Matthias Minderer", "Georg Heigold", "Sylvain Gelly", "Jakob Uszkoreit", "Neil Houlsby"],
+      "year": 2020,
+      "category": "multimodal",
+      "filename": "2010.11929v2.pdf",
+      "arxiv": "2010.11929",
+      "significance": "Vision Transformer - applied Transformer architecture to computer vision",
+      "tags": ["ViT", "Vision Transformer", "Computer Vision"]
+    },
+    {
+      "id": "clip-2021",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision",
+      "authors": ["Alec Radford", "Jong Wook Kim", "Chris Hallacy", "Aditya Ramesh", "Gabriel Goh", "Sandhini Agarwal", "Girish Sastry", "Amanda Askell", "Pamela Mishkin", "Jack Clark", "Gretchen Krueger", "Ilya Sutskever"],
+      "year": 2021,
+      "category": "multimodal",
+      "filename": "2103.00020v1.pdf",
+      "arxiv": "2103.00020",
+      "significance": "CLIP - connected vision and language through contrastive learning",
+      "tags": ["CLIP", "Vision-Language", "Contrastive Learning"]
+    },
+    {
+      "id": "lora-2021",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "authors": ["Edward Hu", "Yelong Shen", "Phillip Wallis", "Zeyuan Allen-Zhu", "Yuanzhi Li", "Shean Wang", "Lu Wang", "Weizhu Chen"],
+      "year": 2021,
+      "category": "efficiency",
+      "filename": "2106.09685v2.pdf",
+      "arxiv": "2106.09685",
+      "significance": "LoRA - efficient fine-tuning by training low-rank adapters",
+      "tags": ["LoRA", "Fine-tuning", "Parameter-Efficient"]
+    },
+    {
+      "id": "latent-diffusion-2021",
+      "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+      "authors": ["Robin Rombach", "Andreas Blattmann", "Dominik Lorenz", "Patrick Esser", "Björn Ommer"],
+      "year": 2021,
+      "category": "multimodal",
+      "filename": "2112.10752v2.pdf",
+      "arxiv": "2112.10752",
+      "significance": "Stable Diffusion foundation - diffusion in latent space for efficient generation",
+      "tags": ["Latent Diffusion", "Stable Diffusion", "Image Generation"]
+    },
+    {
+      "id": "cot-2022",
+      "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "authors": ["Jason Wei", "Xuezhi Wang", "Dale Schuurmans", "Maarten Bosma", "Brian Ichter", "Fei Xia", "Ed H. Chi", "Quoc V. Le", "Denny Zhou"],
+      "year": 2022,
+      "category": "multimodal",
+      "filename": "2201.11903v6.pdf",
+      "arxiv": "2201.11903",
+      "significance": "Chain-of-Thought - unlock reasoning capabilities through step-by-step prompting",
+      "tags": ["Chain-of-Thought", "Prompting", "Reasoning"]
+    },
+    {
+      "id": "instructgpt-2022",
+      "title": "Training language models to follow instructions with human feedback",
+      "authors": ["Long Ouyang", "Jeff Wu", "Xu Jiang", "Diogo Almeida", "Carroll L. Wainwright", "Pamela Mishkin", "Chong Zhang", "Sandhini Agarwal", "Katarina Slama", "Alex Ray", "John Schulman", "Jacob Hilton", "Fraser Kelton", "Luke Miller", "Maddie Simens", "Amanda Askell", "Peter Welinder", "Paul Christiano", "Jan Leike", "Ryan Lowe"],
+      "year": 2022,
+      "category": "language-models",
+      "filename": "2203.02155v1.pdf",
+      "arxiv": "2203.02155",
+      "significance": "InstructGPT/RLHF - aligned LLMs with human preferences",
+      "tags": ["RLHF", "Alignment", "Instruction Following"]
+    },
+    {
+      "id": "chinchilla-2022",
+      "title": "Training Compute-Optimal Large Language Models",
+      "authors": ["Jordan Hoffmann", "Sebastian Borgeaud", "Arthur Mensch", "Elena Buchatskaya", "Trevor Cai", "Eliza Rutherford", "Diego de Las Casas", "Lisa Anne Hendricks", "Johannes Welbl", "Aidan Clark", "Tom Hennigan", "Eric Noland", "Katie Millican", "George van den Driessche", "Bogdan Damoc", "Aurelia Guy", "Simon Osindero", "Karen Simonyan", "Erich Elsen", "Jack W. Rae", "Oriol Vinyals", "Laurent Sifre"],
+      "year": 2022,
+      "category": "efficiency",
+      "filename": "2203.15556v1.pdf",
+      "arxiv": "2203.15556",
+      "significance": "Chinchilla - optimal compute allocation favors more data over larger models",
+      "tags": ["Chinchilla", "Compute-Optimal", "Scaling"]
+    },
+    {
+      "id": "laion5b-2022",
+      "title": "LAION-5B: An open large-scale dataset for training next generation image-text models",
+      "authors": ["Christoph Schuhmann", "Romain Beaumont", "Richard Vencu", "Cade Gordon", "Ross Wightman", "Mehdi Cherti", "Theo Coombes", "Aarush Katta", "Clayton Mullis", "Mitchell Wortsman", "Patrick Schramowski", "Srivatsa Kundurthy", "Katherine Crowson", "Ludwig Schmidt", "Robert Kaczmarczyk", "Jenia Jitsev"],
+      "year": 2022,
+      "category": "data",
+      "filename": "2210.08402v1.pdf",
+      "arxiv": "2210.08402",
+      "significance": "LAION-5B - massive open dataset that enabled Stable Diffusion and others",
+      "tags": ["Dataset", "Image-Text", "Open Source"]
+    },
+    {
+      "id": "react-2022",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "authors": ["Shunyu Yao", "Jeffrey Zhao", "Dian Yu", "Nan Du", "Izhak Shafran", "Karthik Narasimhan", "Yuan Cao"],
+      "year": 2022,
+      "category": "efficiency",
+      "filename": "2210.03629v3.pdf",
+      "arxiv": "2210.03629",
+      "significance": "ReAct - combined reasoning and acting for agent-like LLM behavior",
+      "tags": ["ReAct", "Agents", "Reasoning"]
+    },
+    {
+      "id": "dit-2022",
+      "title": "Scalable Diffusion Models with Transformers",
+      "authors": ["William Peebles", "Saining Xie"],
+      "year": 2022,
+      "category": "multimodal",
+      "filename": "2212.09748v2.pdf",
+      "arxiv": "2212.09748",
+      "significance": "DiT - replaced U-Net with Transformer in diffusion models (used in Sora)",
+      "tags": ["DiT", "Diffusion Transformer", "Scalable"]
+    },
+    {
+      "id": "refinedweb-2023",
+      "title": "The RefinedWeb Dataset for Falcon LLM: Outperforming Curated Corpora with Web Data, and Web Data Only",
+      "authors": ["Guilherme Penedo", "Quentin Malartic", "Daniel Hesslow", "Ruxandra Cojocaru", "Alessandro Cappelli", "Hamza Alobeidli", "Baptiste Pannier", "Ebtesam Almazrouei", "Julien Launay"],
+      "year": 2023,
+      "category": "data",
+      "filename": "2306.01116v1.pdf",
+      "arxiv": "2306.01116",
+      "significance": "RefinedWeb - showed high-quality web data can outperform curated datasets",
+      "tags": ["Dataset", "Web Data", "Falcon"]
+    },
+    {
+      "id": "megascale-2024",
+      "title": "MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs",
+      "authors": ["Ziheng Jiang", "Haibin Lin", "Yinmin Zhong", "Qi Huang", "Yangrui Chen", "Zhi Zhang", "Yanghua Peng", "Xiang Li", "Cong Xie", "Shibiao Nong"],
+      "year": 2024,
+      "category": "data",
+      "filename": "2402.15627v1.pdf",
+      "arxiv": "2402.15627",
+      "significance": "MegaScale - practical lessons for training at extreme scale (10K+ GPUs)",
+      "tags": ["Distributed Training", "Large Scale", "Infrastructure"]
+    },
+    {
+      "id": "tulu3-2024",
+      "title": "Tülu 3: Pushing Frontiers in Open Language Model Post-Training",
+      "authors": ["Nathan Lambert", "Jacob Morrison", "Valentina Pyatkin", "Shengyi Huang", "Hamish Ivison", "Faeze Brahman", "Lester James V. Miranda", "Alisa Liu", "Nouha Dziri", "Xinxi Lyu"],
+      "year": 2024,
+      "category": "language-models",
+      "filename": "2411.15124v5.pdf",
+      "arxiv": "2411.15124",
+      "significance": "Tülu 3 - state-of-the-art open post-training methodology",
+      "tags": ["Post-Training", "Open Source", "Instruction Tuning"]
+    }
+  ]
+}

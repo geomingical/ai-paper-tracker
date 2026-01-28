@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Paper Journey - Personal Learning Tracker</title>
+    <meta name="description" content="A personal learning tracker for essential Machine Learning and AI papers. Track your reading progress through foundational papers in deep learning.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">✨</span>
+                    <div class="logo-text">
+                        <h1>ML Paper Journey</h1>
+                        <p class="tagline">From foundations to frontiers — track your learning</p>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-value" id="read-count">0</span>
+                        <span class="stat-label">Read</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-value" id="total-count">0</span>
+                        <span class="stat-label">Total</span>
+                    </div>
+                    <div class="progress-ring">
+                        <svg viewBox="0 0 36 36">
+                            <path class="progress-ring-bg"
+                                d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="progress-ring-fill" id="progress-ring"
+                                stroke-dasharray="0, 100"
+                                d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                        </svg>
+                        <span class="progress-text" id="progress-percent">0%</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Category Tabs -->
+        <nav class="tabs">
+            <button class="tab active" data-category="all">
+                <span class="tab-icon">🌟</span>
+                <span class="tab-text">All Papers</span>
+                <span class="tab-count" id="count-all">0</span>
+            </button>
+            <button class="tab" data-category="foundations">
+                <span class="tab-icon">🏛️</span>
+                <span class="tab-text">Foundations</span>
+                <span class="tab-count" id="count-foundations">0</span>
+            </button>
+            <button class="tab" data-category="language-models">
+                <span class="tab-icon">💬</span>
+                <span class="tab-text">Language Models</span>
+                <span class="tab-count" id="count-language-models">0</span>
+            </button>
+            <button class="tab" data-category="multimodal">
+                <span class="tab-icon">🎨</span>
+                <span class="tab-text">Multimodal</span>
+                <span class="tab-count" id="count-multimodal">0</span>
+            </button>
+            <button class="tab" data-category="efficiency">
+                <span class="tab-icon">⚡</span>
+                <span class="tab-text">Efficiency</span>
+                <span class="tab-count" id="count-efficiency">0</span>
+            </button>
+            <button class="tab" data-category="data">
+                <span class="tab-icon">📊</span>
+                <span class="tab-text">Data & Scaling</span>
+                <span class="tab-count" id="count-data">0</span>
+            </button>
+        </nav>
+
+        <!-- Bento Grid -->
+        <main class="bento-grid" id="papers-grid">
+            <!-- Papers will be dynamically inserted here -->
+        </main>
+
+        <!-- Paper Detail Modal -->
+        <div class="modal" id="paper-modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close">×</button>
+                <div class="modal-header">
+                    <span class="modal-category" id="modal-category"></span>
+                    <span class="modal-year" id="modal-year"></span>
+                </div>
+                <h2 class="modal-title" id="modal-title"></h2>
+                <p class="modal-authors" id="modal-authors"></p>
+                <p class="modal-significance" id="modal-significance"></p>
+                <div class="modal-tags" id="modal-tags"></div>
+                <div class="modal-notes" id="modal-notes">
+                    <h3>📝 Reading Notes</h3>
+                    <div class="notes-content" id="notes-content">
+                        <p class="no-notes">No reading notes yet. Add a markdown file to <code>notes/{paper-id}.md</code> to track your thoughts!</p>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <a class="btn btn-primary" id="modal-arxiv" href="#" target="_blank">
+                        <span>🔗</span> arXiv
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built with 💜 for learning</p>
+            <p class="source-credit">
+                論文清單來源：<a href="https://github.com/ikaijua/Awesome-AITools/wiki/AI%E8%AE%BA%E6%96%87" target="_blank">Awesome-AITools</a> • 
+                美團光年之外產品負責人 謝青池：《AI演義，36篇論文開啟你的探索之旅》
+            </p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
