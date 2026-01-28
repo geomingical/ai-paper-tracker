@@ -67,21 +67,21 @@ Then add your notes:
 
 ```
 ML_AI/
-├── docs/                    # GitHub Pages root
-│   ├── index.html          # Main page
-│   ├── styles.css          # Styling
-│   ├── app.js              # JavaScript logic
-│   ├── papers.json         # Paper metadata
-│   └── notes/              # Your reading notes
-│       ├── transformer-2017.md
-│       ├── bert-2018.md
-│       └── ...
-├── 基礎模型/               # Foundation papers (PDFs)
-├── 語言模型/               # Language model papers
-├── 多模態/                 # Multimodal papers
-├── 模型效率與優化/          # Efficiency papers
-└── 數據/                   # Data & scaling papers
+├── .gitignore              # Git ignore rules
+└── docs/                   # GitHub Pages root
+    ├── index.html          # Main page
+    ├── styles.css          # Styling
+    ├── app.js              # JavaScript logic
+    ├── papers.json         # Paper metadata
+    ├── preview.png         # Preview image
+    ├── README.md           # This file
+    └── notes/              # Your reading notes
+        ├── transformer-2017.md
+        ├── resnet-2015.md
+        └── gpt3-2020.md
 ```
+
+> **Note**: PDF 論文資料夾 (基礎模型/、語言模型/、多模態/、模型效率與優化/、數據/) 僅存於本地，不上傳至 Git。
 
 ## Customization
 
