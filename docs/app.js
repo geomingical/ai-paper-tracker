@@ -23,7 +23,7 @@
 
     async function init() {
         await loadPapersData();
-        loadReadingNotes();
+        await loadReadingNotes();
         renderPapers();
         updateStats();
         updateCategoryCounts();
