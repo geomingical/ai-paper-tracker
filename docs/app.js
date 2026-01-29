@@ -43,7 +43,7 @@
     async function loadReadingNotes() {
         readPapers.clear();
         
-        for (const paper of papersData.papers) {
+        const fetchPromises = papersData.papers.map(async (paper) => {
             try {
                 const response = await fetch(`notes/${paper.id}.md`);
                 if (response.ok) {
@@ -54,9 +54,10 @@
                     }
                 }
             } catch (e) {
-                // Note file doesn't exist, paper is unread
             }
-        }
+        });
+        
+        await Promise.all(fetchPromises);
     }
 
     function renderPapers() {
