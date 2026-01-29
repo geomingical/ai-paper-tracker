@@ -276,7 +276,16 @@ body {
 }
 
 .paper-card.read {
-    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(99, 102, 241, 0.05) 100%);
+    border-color: var(--card-accent);
+    box-shadow: 
+        0 0 0 1px var(--card-accent),
+        0 0 20px color-mix(in srgb, var(--card-accent) 25%, transparent),
+        inset 0 1px 0 color-mix(in srgb, var(--card-accent) 10%, transparent);
+}
+
+.paper-card.read::before {
+    opacity: 1;
+    height: 4px;
 }
 
 .paper-card.read::after {
@@ -286,7 +295,7 @@ body {
     right: 16px;
     width: 28px;
     height: 28px;
-    background: var(--accent-foundations);
+    background: var(--card-accent);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -294,7 +303,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     color: white;
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--card-accent) 50%, transparent);
 }
 
 .card-header {
@@ -632,18 +641,23 @@ body {
 .paper-card:nth-child(9) { animation-delay: 0.45s; }
 .paper-card:nth-child(10) { animation-delay: 0.5s; }
 
+/* Tablet and small desktop */
 @media (max-width: 768px) {
     .app {
         padding: 0 16px;
+        padding-left: max(16px, env(safe-area-inset-left));
+        padding-right: max(16px, env(safe-area-inset-right));
     }
     
     .header {
         padding: 24px 0;
+        padding-top: max(24px, env(safe-area-inset-top));
     }
     
     .header-content {
         flex-direction: column;
         align-items: flex-start;
+        gap: 16px;
     }
     
     .logo-icon {
@@ -657,16 +671,29 @@ body {
     .stats {
         width: 100%;
         justify-content: center;
+        padding: 14px 20px;
+        gap: 16px;
+    }
+    
+    .stat-value {
+        font-size: 24px;
+    }
+    
+    .progress-ring {
+        width: 50px;
+        height: 50px;
     }
     
     .tabs {
         padding: 6px;
         margin-bottom: 24px;
+        gap: 4px;
     }
     
     .tab {
-        padding: 10px 14px;
+        padding: 12px 16px;
         font-size: 13px;
+        min-height: 44px; /* Touch target */
     }
     
     .tab-text {
@@ -675,6 +702,11 @@ body {
     
     .tab-icon {
         font-size: 20px;
+    }
+    
+    .tab-count {
+        font-size: 11px;
+        padding: 2px 6px;
     }
     
     .bento-grid {
@@ -686,21 +718,265 @@ body {
         padding: 20px;
     }
     
+    .card-title {
+        font-size: 15px;
+    }
+    
+    .modal {
+        padding: 0;
+    }
+    
     .modal-content {
         padding: 24px;
-        margin: 16px;
+        padding-bottom: max(24px, env(safe-area-inset-bottom));
+        margin: 0;
+        max-height: 100vh;
+        height: 100%;
+        border-radius: 0;
+        border: none;
+    }
+    
+    .modal-close {
+        width: 44px;
+        height: 44px;
+        top: max(16px, env(safe-area-inset-top));
+        right: 16px;
     }
     
     .modal-title {
         font-size: 20px;
+        padding-right: 50px;
     }
     
     .modal-actions {
         flex-direction: column;
+        position: sticky;
+        bottom: 0;
+        background: var(--bg-secondary);
+        margin: 0 -24px -24px;
+        padding: 16px 24px;
+        padding-bottom: max(16px, env(safe-area-inset-bottom));
+        border-top: 1px solid var(--border-color);
     }
     
     .btn {
         justify-content: center;
+        min-height: 48px;
+    }
+    
+    .footer {
+        padding-bottom: max(40px, env(safe-area-inset-bottom));
+    }
+}
+
+/* Small phones (iPhone SE, etc.) */
+@media (max-width: 480px) {
+    .app {
+        padding: 0 12px;
+        padding-left: max(12px, env(safe-area-inset-left));
+        padding-right: max(12px, env(safe-area-inset-right));
+    }
+    
+    .header {
+        padding: 16px 0;
+        padding-top: max(16px, env(safe-area-inset-top));
+        margin-bottom: 16px;
+    }
+    
+    .logo {
+        gap: 12px;
+    }
+    
+    .logo-icon {
+        font-size: 32px;
+    }
+    
+    .logo-text h1 {
+        font-size: 18px;
+    }
+    
+    .tagline {
+        font-size: 12px;
+    }
+    
+    .stats {
+        padding: 12px 16px;
+        gap: 12px;
+    }
+    
+    .stat-value {
+        font-size: 20px;
+    }
+    
+    .stat-label {
+        font-size: 10px;
+    }
+    
+    .stat-divider {
+        height: 32px;
+    }
+    
+    .progress-ring {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .progress-text {
+        font-size: 10px;
+    }
+    
+    .tabs {
+        padding: 4px;
+        margin-bottom: 16px;
+        gap: 2px;
+    }
+    
+    .tab {
+        padding: 10px 12px;
+        min-height: 44px;
+    }
+    
+    .tab-icon {
+        font-size: 18px;
+    }
+    
+    .tab-count {
+        display: none;
+    }
+    
+    .bento-grid {
+        gap: 12px;
+    }
+    
+    .paper-card {
+        padding: 16px;
+    }
+    
+    .card-header {
+        margin-bottom: 12px;
+    }
+    
+    .card-category {
+        padding: 4px 10px;
+        font-size: 11px;
+    }
+    
+    .card-year {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+    
+    .card-title {
+        font-size: 14px;
+        margin-bottom: 8px;
+        -webkit-line-clamp: 2;
+    }
+    
+    .card-authors {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .card-significance {
+        font-size: 12px;
+    }
+    
+    .card-tags {
+        margin-top: 12px;
+        gap: 6px;
+    }
+    
+    .tag {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+    
+    .paper-card.read::after {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        top: 12px;
+        right: 12px;
+    }
+    
+    .modal-content {
+        padding: 20px;
+        padding-top: max(60px, calc(env(safe-area-inset-top) + 50px));
+    }
+    
+    .modal-header {
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+    
+    .modal-category {
+        padding: 5px 12px;
+        font-size: 12px;
+    }
+    
+    .modal-year {
+        font-size: 13px;
+    }
+    
+    .modal-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding-right: 0;
+    }
+    
+    .modal-authors {
+        font-size: 13px;
+        margin-bottom: 16px;
+    }
+    
+    .modal-significance {
+        font-size: 14px;
+        padding: 14px;
+        margin-bottom: 16px;
+    }
+    
+    .modal-tags {
+        gap: 6px;
+        margin-bottom: 20px;
+    }
+    
+    .modal-tags .tag {
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+    
+    .modal-notes {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .modal-notes h3 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .notes-content {
+        font-size: 13px;
+    }
+    
+    .modal-actions {
+        margin: 0 -20px -20px;
+        padding: 14px 20px;
+    }
+    
+    .btn {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+    
+    .footer {
+        padding: 24px 0;
+        font-size: 13px;
+    }
+    
+    .footer .source-credit {
+        font-size: 11px;
+        line-height: 1.5;
     }
 }
 
