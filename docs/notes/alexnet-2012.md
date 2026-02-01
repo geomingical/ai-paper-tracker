@@ -114,4 +114,4 @@ Dropout = 訓練時，隨機讓「中間 neuron 暫時失聲」
 
 👉 你要學的是「設計原則」，不是照抄數字。
 
-**ChatGPT 對話連結**: (請補充)
+**ChatGPT 對話連結**: https://chatgpt.com/share/697f3a95-687c-800a-9bfa-2f067b4d7200
