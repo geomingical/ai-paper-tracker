@@ -123,6 +123,9 @@
         if (paper.notes && paper.notes.trim()) {
             notesContent.innerHTML = marked ? marked.parse(paper.notes) : paper.notes.replace(/\n/g, '<br>');
             notesContent.classList.add('has-notes');
+            if (window.MathJax && MathJax.typesetPromise) {
+                MathJax.typesetPromise([notesContent]);
+            }
         } else {
             notesContent.innerHTML = `<p class="no-notes">No reading notes yet. Add a markdown file to <code>notes/${paper.id}.md</code> to track your thoughts!</p>`;
             notesContent.classList.remove('has-notes');
